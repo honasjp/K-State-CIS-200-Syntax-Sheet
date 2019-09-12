@@ -1,14 +1,14 @@
 # CIS 200 Syntax Guide
 
 ## Table of Contents
-[Foreword](#Foreword)
-[Printing](#Printing)
-[Initializing and Using Variables](#Initializing-and-Using-Variables)
-[Reading in User Input](#Reading-in-User-Input)
-[Formatting Numbers with Decimals](#Formatting-Numbers-with-Decimals)
-[Loops](#Loops)
-[Arrays](#Arrays)
-[Functions](#Functions)
+[Foreword](#Foreword)<br/>
+[Printing](#Printing)<br/>
+[Initializing and Using Variables](#Initializing-and-Using-Variables)<br/>
+[Reading in User Input](#Reading-in-User-Input)<br/>
+[Formatting Numbers with Decimals](#Formatting-Numbers-with-Decimals)<br/>
+[Loops](#Loops)<br/>
+[Arrays](#Arrays)<br/>
+[Functions](#Functions)<br/>
 
 ## Foreword
 This is not supposed to be a replacement for lectures or Java textbooks. With that being said, this should be a helpful supplemental material. 
