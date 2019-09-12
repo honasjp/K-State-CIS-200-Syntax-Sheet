@@ -14,7 +14,20 @@
 This is not supposed to be a replacement for lectures or Java textbooks. With that being said, this should be a helpful supplemental material. 
 
 ## Printing
-WORK IN PROGRESS
+```java
+//println brings the cursor to the next line
+System.out.println("Hello");
+System.out.println("World");
+//Outputs ->
+//Hello
+//World
+
+//print leaves the cursor on the same line
+System.out.print("Hello ");//Notice the space after Hello
+System.out.print("World");
+//Outputs ->
+//Hello World
+```
 
 ## Initializing and Using Variables
 WORK IN PROGRESS
