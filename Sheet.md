@@ -27,22 +27,113 @@ System.out.print("Hello ");//Notice the space after Hello
 System.out.print("World");
 //Outputs ->
 //Hello World
+
+//print a variable along with text
+int x = 5;
+System.out.println("X is equal to " + x);
+//Outputs ->
+//X is equal to 5
 ```
 
 ## Initializing and Using Variables
-WORK IN PROGRESS
+* Each variable **MUST** have a unique name
+```java
+int x = 5;//Integers do not have decimal places
+double y = 5.0;//doubles have decimal places
+String str = "Test 5";//Strings are surrounded by double quotes
+char c = 'y';//Chars are surrounded by single quotes
+
+```
 
 ## Reading in User Input
-WORK IN PROGRESS
+To read user input we must import the scanner
+```java
+import java.util.*;//This line imports the scanner. Also this must be placed above the class
+public class Test 
+{
+  public static void main(String[] args) 
+  {
+    Scanner s = new Scanner(System.in);
+    
+    String str = s.nextLine();
+    char c = s.nextLine().charAt(0);//Get first character of the user inputted string
+    int x = Integer.parseInt(s.nextLine());//Do not use "s.nextInt()"! Always use Integer.parseInt(s.nextLine())
+  }
+}
+```
 
 ## Formatting Numbers with Decimals
-WORK IN PROGRESS
+```java
+import java.text.*;//This line imports the DecimalFormat. Also this must be placed above the class
+public class Test 
+{
+  public static void main(String[] args) 
+  {
+    DecimalFormat df = new DecimalFormat("#0.00");
+    
+    double pi = 3.141592;
+    System.out.println(df.format(pi));
+  }
+}
+```
 
 ## Loops
-WORK IN PROGRESS
+There are three main types of loops: for, while, and do while:
+### For Loops
+This is the loop that you will use the most. Helpful for iterating over arrays.
+```java
+//General form
+for([variable creation]; [variable condition]; [variable incrementation/decrementation])
+{
+}
+
+//Example
+for(int i = 0; i < 10; i++)
+{
+  //iterates from 0 to 9
+}
+```
+### While Loops
+Similar to do while loops, however, they will not run if the condition is not met.
+```java
+//Example
+int i = 0;
+while(i < 10)
+{
+  i++;
+  //iterates from 0 to 9
+}
+
+int j = 11;
+while(j < 10)//will not run because condition is not met
+{
+  j++;
+}
+```
+### Do While Loops
+Similar to while loops, however, they are guaranteed to run at least once even if the condition is not met.
+```java
+//Example
+int i = 0;
+do
+{
+  i++;
+  //iterates from 0 to 9
+}while(i < 10);
+
+//This will run once and then terminate because the condition is not met
+int j = 11;
+do
+{
+  j++;
+}while(j < 10);
+```
 
 ## Arrays
-WORK IN PROGRESS
+I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros.
+| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| ------------- |:----:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Functions
 WORK IN PROGRESS
