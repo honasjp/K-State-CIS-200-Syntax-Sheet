@@ -111,6 +111,7 @@ while(j < 10)//will not run because condition is not met
 {
   j++;
 }
+//The value of j after the loop is still 11
 ```
 ### Do While Loops
 Similar to while loops, however, they are guaranteed to run at least once even if the condition is not met.
@@ -129,6 +130,7 @@ do
 {
   j++;
 }while(j < 10);
+//The value of j after the loop is 12 because it runs once before being terminated
 ```
 
 ## Arrays
