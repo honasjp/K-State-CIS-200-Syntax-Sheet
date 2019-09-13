@@ -181,7 +181,7 @@ do
 ```
 
 ## Arrays
-I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros. Arrays are zero indexed, so the first position in the array is index 0<br/>
+I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros. Keep in mind that arrays are zero indexed, so the first position in the array is index 0<br/>
 
 | Index:        | 0           | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
@@ -198,6 +198,7 @@ int[] thisIsAnIntArray = new int[10];
 
 thisIsAnIntArray[0] = 3;//Set the value of index 0 to 3
 thisIsAnIntArray[5] = 7;//Set the value of index 5 to 7
+//thisIsAnIntArray[10] = 4;//You cannot access this index because it is out of bounds of the array (0-9)
 ```
 The above code would change the values at positions 0 and 5 to the given values. This is represented below.<br/>
 
