@@ -130,10 +130,11 @@ do
 ```
 
 ## Arrays
-I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros.
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-| ------------- |:----:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros.<br/>
+
+| Index:        | 0           | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
+| Value:      | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Functions
 WORK IN PROGRESS
