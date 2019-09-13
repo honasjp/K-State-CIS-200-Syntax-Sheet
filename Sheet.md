@@ -214,5 +214,23 @@ System.out.println("The value of index 5 in the array is: " + thisIsAnIntArray[5
 //Outputs -> 
 //The value of index 5 in the array is: 7
 ```
+### Using Loops to Iterate over Arrays
+We can also use variables to access an index in an array. By also using loops we can automatically iterate over an entire array.
+```java
+int[] thisIsAnIntArray = new int[10];
+
+int x = 2;
+int y = thisIsAnIntArray[x];//Gets the value at index 2 in the array and stores that value into y
+
+```
+Now that we know we can use variables let's apply this to a loop.
+```java
+int[] thisIsAnIntArray = new int[10];
+
+for(int i = 0; i < thisIsAnIntArray.length; i++)
+{
+  System.out.println(thisIsAnIntArray[i]);//This will print out every value in the array
+}
+```
 ## Functions
 WORK IN PROGRESS
