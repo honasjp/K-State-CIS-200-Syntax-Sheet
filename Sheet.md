@@ -6,6 +6,7 @@
 [Initializing and Using Variables](#Initializing-and-Using-Variables)<br/>
 [Reading in User Input](#Reading-in-User-Input)<br/>
 [Formatting Numbers with Decimals](#Formatting-Numbers-with-Decimals)<br/>
+[If Statements](#If-Statements)<br/>
 [Loops](#Loops)<br/>
 [Arrays](#Arrays)<br/>
 [Functions](#Functions)<br/>
@@ -54,7 +55,7 @@ public class Test
 {
   public static void main(String[] args) 
   {
-    Scanner s = new Scanner(System.in);
+    Scanner s = new Scanner(System.in);//Create the scanner object
     
     String str = s.nextLine();
     char c = s.nextLine().charAt(0);//Get first character of the user inputted string
@@ -70,12 +71,58 @@ public class Test
 {
   public static void main(String[] args) 
   {
-    DecimalFormat df = new DecimalFormat("#0.00");
+    DecimalFormat df = new DecimalFormat("#0.00");//Create the DecimalFormat object
     
     double pi = 3.141592;
     System.out.println(df.format(pi));
     //Outputs -> 3.14
   }
+}
+```
+
+## If Statements
+There are three variations of if statements: if, if else, and else
+### If
+```java
+int x = 1;
+if(x == 1)
+{
+  //The condition is met so this if will run
+}
+```
+
+### Else if
+Else if statements will not be run if one of the if statements it is linked to has its condition met.
+```java
+int x = 1;
+if(x == 1)
+{
+  //Condition is met
+}
+else if (x > 1)
+{
+  //Will not run because an if statement before it ran
+}
+else if(x < 1)
+{
+  //Will not run because an if statement before it ran
+}
+```
+### Else
+Else statements are the cases that run when none of the if or else if conditions are met.
+```java
+int x = 5;
+if(x == 1)
+{
+
+}
+else if(x == 2)
+{
+
+}
+else //Else statements do not need conditions: they rely on other if statements coming before them
+{
+  //Because x does not meet any of the preciding if conditionals, this else statement will run
 }
 ```
 
@@ -134,11 +181,37 @@ do
 ```
 
 ## Arrays
-I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros.<br/>
+I find it helpful to think of arrays as tables with pre-defined lengths. The following table demonstrates what you might imagine an array to look like that is of length 10 and has all zeros. Arrays are zero indexed, so the first position in the array is index 0<br/>
 
 | Index:        | 0           | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
 | Value:      | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+### Initializing Arrays
+This creates an integer array of length 10. This would create the array you see represented in the table above.
+```java
+int[] thisIsAnIntArray = new int[10];
+```
+### Accessing/Setting Values in Arrays
+Now that we have created an array we can set or access its values. **DO NOT** access a position that is outside the bounds (length) of the array: doing so will crash your program.
+```java
+int[] thisIsAnIntArray = new int[10];
 
+thisIsAnIntArray[0] = 3;//Set the value of index 0 to 3
+thisIsAnIntArray[5] = 7;//Set the value of index 5 to 7
+```
+The above code would change the values at positions 0 and 5 to the given values. This is represented below.<br/>
+
+| Index:        | 0           | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
+| Value:      | 3 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0 |
+```java
+int[] thisIsAnIntArray = new int[10];
+
+thisIsAnIntArray[0] = 3;
+thisIsAnIntArray[5] = 7;
+System.out.println("The value of index 5 in the array is: " + thisIsAnIntArray[5]);//Access the value of index 5
+//Outputs -> 
+//The value of index 5 in the array is: 7
+```
 ## Functions
 WORK IN PROGRESS
