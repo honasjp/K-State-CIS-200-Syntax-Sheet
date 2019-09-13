@@ -37,6 +37,7 @@ System.out.println("X is equal to " + x);
 
 ## Initializing and Using Variables
 * Each variable **MUST** have a unique name
+* Each variable must be assigned a type (int, char, etc..)
 ```java
 int x = 5;//Integers do not have decimal places
 double y = 5.0;//doubles have decimal places
@@ -73,6 +74,7 @@ public class Test
     
     double pi = 3.141592;
     System.out.println(df.format(pi));
+    //Outputs -> 3.14
   }
 }
 ```
@@ -80,7 +82,7 @@ public class Test
 ## Loops
 There are three main types of loops: for, while, and do while:
 ### For Loops
-This is the loop that you will use the most. Helpful for iterating over arrays.
+This is the loop that you will use the most. They are helpful for iterating over arrays.
 ```java
 //General form
 for([variable creation]; [variable condition]; [variable incrementation/decrementation])
